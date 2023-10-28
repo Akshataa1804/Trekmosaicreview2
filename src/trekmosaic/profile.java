@@ -118,12 +118,12 @@ public class profile extends javax.swing.JFrame {
         jLabel7.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
         jLabel7.setText("About me : ");
         jPanel1.add(jLabel7);
-        jLabel7.setBounds(40, 320, 72, 20);
+        jLabel7.setBounds(40, 320, 78, 20);
 
         jLabel10.setFont(new java.awt.Font("Segoe UI Semibold", 0, 16)); // NOI18N
         jLabel10.setText("Connect with me : ");
         jPanel1.add(jLabel10);
-        jLabel10.setBounds(50, 570, 135, 22);
+        jLabel10.setBounds(50, 570, 138, 22);
 
         verifybutton.setText("VERIFY PROFILE");
         verifybutton.addActionListener(new java.awt.event.ActionListener() {

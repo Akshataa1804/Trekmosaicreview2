@@ -76,7 +76,7 @@ public class create_trek extends javax.swing.JFrame {
                 emailFieldActionPerformed(evt);
             }
         });
-        jPanel2.add(emailField, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 140, 271, 44));
+        jPanel2.add(emailField, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 150, 271, 44));
 
         jtextuser_name.setFont(new java.awt.Font("Segoe UI Light", 0, 18)); // NOI18N
         jtextuser_name.setDisabledTextColor(new java.awt.Color(0, 0, 0));

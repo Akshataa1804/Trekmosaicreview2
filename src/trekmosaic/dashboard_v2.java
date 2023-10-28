@@ -79,7 +79,6 @@ public class dashboard_v2 extends javax.swing.JFrame {
         });
         jPanel1.add(loginb1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 160, 70, 30));
 
-        bglabel.setIcon(new javax.swing.ImageIcon("C:\\Users\\ADMIN\\Desktop\\yASH\\TRK_PLANNER_PICS\\a-minimalists-journey-compact-backpack-and-global-compass-atop-a-map-4oku3ll0cpolv5vb.jpg")); // NOI18N
         bglabel.setMaximumSize(new java.awt.Dimension(350, 350));
         bglabel.setMinimumSize(new java.awt.Dimension(350, 350));
         bglabel.setPreferredSize(new java.awt.Dimension(350, 300));
@@ -102,20 +101,21 @@ public class dashboard_v2 extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         db_treklabel2.setFont(new java.awt.Font("Sitka Banner", 1, 24)); // NOI18N
+        db_treklabel2.setForeground(new java.awt.Color(255, 255, 255));
         db_treklabel2.setText("DASHBOARD");
-        getContentPane().add(db_treklabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 160, 70));
+        getContentPane().add(db_treklabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 160, 70));
 
         treklabel1.setFont(new java.awt.Font("Swis721 BlkCn BT", 0, 48)); // NOI18N
         treklabel1.setText("TREK");
         treklabel1.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
-        getContentPane().add(treklabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 90, 130, 70));
+        getContentPane().add(treklabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 140, 70));
 
         db_plannerlabel2.setFont(new java.awt.Font("Swis721 BlkCn BT", 0, 48)); // NOI18N
         db_plannerlabel2.setText("MOSSAIC");
-        getContentPane().add(db_plannerlabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 130, 200, 90));
+        getContentPane().add(db_plannerlabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 200, 90));
 
-        create_trek_button.setBackground(new java.awt.Color(153, 153, 153));
-        create_trek_button.setFont(new java.awt.Font("Swis721 Cn BT", 0, 24)); // NOI18N
+        create_trek_button.setBackground(new java.awt.Color(204, 204, 204));
+        create_trek_button.setFont(new java.awt.Font("Swis721 Cn BT", 1, 24)); // NOI18N
         create_trek_button.setForeground(new java.awt.Color(51, 51, 51));
         create_trek_button.setText("CREATE TREK");
         create_trek_button.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -124,10 +124,10 @@ public class dashboard_v2 extends javax.swing.JFrame {
                 create_trek_buttonActionPerformed(evt);
             }
         });
-        getContentPane().add(create_trek_button, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 600, 150, 40));
+        getContentPane().add(create_trek_button, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 350, 200, 40));
 
-        my_profile_button.setBackground(new java.awt.Color(153, 153, 153));
-        my_profile_button.setFont(new java.awt.Font("Swis721 Cn BT", 0, 24)); // NOI18N
+        my_profile_button.setBackground(new java.awt.Color(204, 204, 204));
+        my_profile_button.setFont(new java.awt.Font("Swis721 Cn BT", 1, 24)); // NOI18N
         my_profile_button.setForeground(new java.awt.Color(51, 51, 51));
         my_profile_button.setText("MY PROFILE ");
         my_profile_button.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -136,10 +136,10 @@ public class dashboard_v2 extends javax.swing.JFrame {
                 my_profile_buttonActionPerformed(evt);
             }
         });
-        getContentPane().add(my_profile_button, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 600, 140, 40));
+        getContentPane().add(my_profile_button, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 570, 140, 40));
 
-        join_trek_button1.setBackground(new java.awt.Color(153, 153, 153));
-        join_trek_button1.setFont(new java.awt.Font("Swis721 Cn BT", 0, 24)); // NOI18N
+        join_trek_button1.setBackground(new java.awt.Color(204, 204, 204));
+        join_trek_button1.setFont(new java.awt.Font("Swis721 Cn BT", 1, 24)); // NOI18N
         join_trek_button1.setForeground(new java.awt.Color(51, 51, 51));
         join_trek_button1.setText("JOIN A TREK");
         join_trek_button1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -148,10 +148,10 @@ public class dashboard_v2 extends javax.swing.JFrame {
                 join_trek_button1ActionPerformed(evt);
             }
         });
-        getContentPane().add(join_trek_button1, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 600, 140, 40));
+        getContentPane().add(join_trek_button1, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 350, 210, 40));
 
-        info_trek_button.setBackground(new java.awt.Color(153, 153, 153));
-        info_trek_button.setFont(new java.awt.Font("Swis721 Cn BT", 0, 24)); // NOI18N
+        info_trek_button.setBackground(new java.awt.Color(204, 204, 204));
+        info_trek_button.setFont(new java.awt.Font("Swis721 Cn BT", 1, 24)); // NOI18N
         info_trek_button.setForeground(new java.awt.Color(51, 51, 51));
         info_trek_button.setText("INFO");
         info_trek_button.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -160,10 +160,10 @@ public class dashboard_v2 extends javax.swing.JFrame {
                 info_trek_buttonActionPerformed(evt);
             }
         });
-        getContentPane().add(info_trek_button, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 610, 110, 40));
+        getContentPane().add(info_trek_button, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 570, 110, 40));
 
         about_us.setBackground(new java.awt.Color(204, 204, 204));
-        about_us.setFont(new java.awt.Font("Serif", 0, 14)); // NOI18N
+        about_us.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
         about_us.setText("About Us");
         about_us.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         about_us.addActionListener(new java.awt.event.ActionListener() {
@@ -171,10 +171,10 @@ public class dashboard_v2 extends javax.swing.JFrame {
                 about_usActionPerformed(evt);
             }
         });
-        getContentPane().add(about_us, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 10, 70, 20));
+        getContentPane().add(about_us, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 60, 100, 30));
 
         gearButton.setBackground(new java.awt.Color(204, 204, 204));
-        gearButton.setFont(new java.awt.Font("Serif", 0, 14)); // NOI18N
+        gearButton.setFont(new java.awt.Font("Swis721 Cn BT", 1, 24)); // NOI18N
         gearButton.setText("RENT GEAR");
         gearButton.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED));
         gearButton.addActionListener(new java.awt.event.ActionListener() {
@@ -182,10 +182,10 @@ public class dashboard_v2 extends javax.swing.JFrame {
                 gearButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(gearButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 50, 90, 30));
+        getContentPane().add(gearButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 570, 120, 40));
 
         loginButton.setBackground(new java.awt.Color(204, 204, 204));
-        loginButton.setFont(new java.awt.Font("Serif", 0, 14)); // NOI18N
+        loginButton.setFont(new java.awt.Font("Serif", 1, 24)); // NOI18N
         loginButton.setText("SIGN IN ");
         loginButton.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED));
         loginButton.addActionListener(new java.awt.event.ActionListener() {
@@ -193,9 +193,9 @@ public class dashboard_v2 extends javax.swing.JFrame {
                 loginButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(loginButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 90, 90, 30));
+        getContentPane().add(loginButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 10, 170, 40));
 
-        db_bgimage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/images/dashboardimg.png"))); // NOI18N
+        db_bgimage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/images/Untitled design.png"))); // NOI18N
         db_bgimage.setMaximumSize(new java.awt.Dimension(1080, 720));
         db_bgimage.setMinimumSize(new java.awt.Dimension(1080, 720));
         db_bgimage.setPreferredSize(new java.awt.Dimension(1080, 720));
@@ -301,7 +301,7 @@ public class dashboard_v2 extends javax.swing.JFrame {
         // TODO add your handling code here:
         if(UserData.check == 1){
         dashboard_v2.this.dispose();
-        gearpage gear = new gearpage();
+        gearpage2 gear = new gearpage2();
         gear.setLocationRelativeTo(null);
         gear.setVisible(true);
       }

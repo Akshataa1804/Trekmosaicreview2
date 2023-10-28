@@ -147,57 +147,52 @@ public class login extends javax.swing.JFrame {
         String enteredUsername = loginUsernameField.getText();
         String enteredPassword = loginPasswordField.getText();
 
-        Connection con = DatabaseConnection.connect();
-         
-        
-        String query = "SELECT * FROM user_login WHERE username=?";
-        String dataquery = "SELECT * from user_data WHERE username = ?";
-        try (PreparedStatement statement = con.prepareStatement(query);
-             PreparedStatement Userstatement = con.prepareStatement(dataquery)) {
-            statement.setString(1, enteredUsername);
-            Userstatement.setString(1, enteredUsername);
-           
-            ResultSet result = statement.executeQuery();
-            ResultSet result2 = Userstatement.executeQuery();
-            
-            if(result2.next()){
-                username = result2.getString("username");
-                name = result2.getString("name");
-                location = result2.getString("location");
-                age = result2.getInt("age");
-                email = result2.getString("email");
-                
-                
-                
-                        
-            }
-            
-            if (result.next()) {
-               
-                String storedPassword = result.getString("password");
+            Connection con = DatabaseConnection.connect();
 
-             
-                if (enteredPassword.equals(storedPassword)) {
-                    
-                    UserData.check = 1;
-                    UserIndoData.setName(name);
-                    UserIndoData.setLocation(location);
-                    UserIndoData.setAge(age);
-                    UserIndoData.setEmail(email);
-                    
-                    JOptionPane.showConfirmDialog(this, "Login Successful");
-                    //profile p = new profile();
-                    //p.setName(name);
-                    
-                    //p.setLocationRelativeTo(null);
-                    //p.setVisible(true);
-                } else {
-                  
-                    JOptionPane.showMessageDialog(this, "Invalid password");
+            String query = "SELECT * FROM user_login WHERE username=?";
+            String dataquery = "SELECT * from user_data WHERE username = ?";
+            try (PreparedStatement statement = con.prepareStatement(query); 
+                 PreparedStatement Userstatement = con.prepareStatement(dataquery)) {
+                statement.setString(1, enteredUsername);
+                Userstatement.setString(1, enteredUsername);
+
+                ResultSet result = statement.executeQuery();
+                ResultSet result2 = Userstatement.executeQuery();
+
+                if (result2.next()) {
+                    username = result2.getString("username");
+                    name = result2.getString("name");
+                    location = result2.getString("location");
+                    age = result2.getInt("age");
+                    email = result2.getString("email");
+
                 }
-            } else {
-              
-                JOptionPane.showMessageDialog(this, "Invalid username");
+
+                if (result.next()) {
+
+                    String storedPassword = result.getString("password");
+
+                    if (enteredPassword.equals(storedPassword)) {
+
+                        UserData.check = 1;
+                        UserIndoData.setName(name);
+                        UserIndoData.setLocation(location);
+                        UserIndoData.setAge(age);
+                        UserIndoData.setEmail(email);
+
+                        JOptionPane.showMessageDialog(this, "Login Successful");
+                        //profile p = new profile();
+                        //p.setName(name);
+
+                        //p.setLocationRelativeTo(null);
+                        //p.setVisible(true);
+                    } else {
+
+                        JOptionPane.showMessageDialog(this, "Invalid password");
+                    }
+                } else {
+
+                    JOptionPane.showMessageDialog(this, "Invalid username");
             }
         }
     } catch (SQLException ex) {} finally {

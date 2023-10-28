@@ -22,6 +22,7 @@ public class TrekInfo extends javax.swing.JFrame {
      */
     public TrekInfo() {
         initComponents();
+        infoArea.setEnabled(false);
     }
 
     /**

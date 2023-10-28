@@ -148,8 +148,6 @@ public class DisplayCreateTrek extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 520, 130, 50));
-
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\ADMIN\\Desktop\\yASH\\TRK_PLANNER_PICS\\a-minimalists-journey-compact-backpack-and-global-compass-atop-a-map-4oku3ll0cpolv5vb.jpg")); // NOI18N
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 1340, 770));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 6, 1337, 766));
